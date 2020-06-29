@@ -9,6 +9,8 @@ import ClassicEditor from '../../build/ckeditor';
 
 ClassicEditor.create( document.querySelector( '#editor' ) )
 	.then( editor => {
+		console.log(
+			'editor :>> ', editor );
 		window.editor = editor;
 	} )
 	.catch( error => {
